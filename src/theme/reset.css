@@ -1,0 +1,60 @@
+/**
+ * xn213's Reset CSS v1.0
+ */
+html, body, div, span,
+h1, h2, h3, h4, h5, p,
+a, img, small, strong, b, sub, sup, u, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details,
+figure, figcaption, header, section, footer,
+menu, nav, audio, video, input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figure, footer, header, menu, nav, section {
+  display: block;
+}
+
+html, body {
+  width: 100%;
+}
+body {
+  line-height: 1;
+  background-color: #fff;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* custom */
+a {
+  color: #7e8c8d;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+@media screen and (min-width: 680px) {
+  body {
+    width: 680px;
+    position: relative;
+    margin: 0 auto;
+  }
+  #app {
+    width: 680px;
+  }
+  #app.header {
+    width: 680px;
+    margin: 0 auto;
+  }
+}
