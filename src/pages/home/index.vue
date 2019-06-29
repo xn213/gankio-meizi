@@ -34,6 +34,7 @@ export default {
   },
   methods: {
     async getmm(){
+      this.page = 2 // 部署到 github gh-pages 后跨域 只能请求 2
       let mm = await getMM(this.page)
       let data = mm.data.results
       let left = data.filter((data, i) => {
@@ -45,7 +46,7 @@ export default {
       this.leftData = this.leftData.concat(left)
       this.rightData = this.rightData.concat(right)
       this.loading = false
-      console.log(this.page)
+      console.log('page: ', this.page, 'data: ', data)
     },
     loadMore(){
       this.loading = true
