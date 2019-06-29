@@ -2,7 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-import '@/assets/fonts-css/fonts.css'
+import '@/assets/css/index.scss'
 
 import infiniteScroll from 'vue-infinite-scroll'
 import VueLazyload from 'vue-lazyload' // 图片懒加载

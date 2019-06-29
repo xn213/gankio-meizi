@@ -5,12 +5,12 @@
       <div class="menu-btn">
         <span class="iconfont icon-fenlei" @click.stop="isMaskShow"></span>
       </div>
-      <section class="title">{{headerTitle}}</section>
+      <section class="title">{{ headerTitle }}</section>
       <div class="search-btn">
         <span class="iconfont icon-sousuo_sousuo"></span>
       </div>
     </header>
-    <v-menu></v-menu>
+    <v-menu :show='isMenuShow'></v-menu>
   </div>
 </template>
 
@@ -37,18 +37,6 @@ export default {
 
 <style lang="scss" scoped>
 .header {
-  width: 100%;
-  min-height: 50px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 2113;
-  color: #fff;
-  background: #b45dea;
-  line-height: 50px;
-  text-align: center;
-  box-shadow: 0 1px 0 rgba(0,0,0,.1), 0 1px 2px rgba(0,0,0,.1);
-  transition: all .3s ease;
   .mask {
     width: 100%;
     height: 100%;
@@ -58,11 +46,24 @@ export default {
     left: 0;
     bottom: 0;
     right: 0;
-    z-index: 213;
+    z-index: 21;
+  }
+  .show {
+    transform: translateX(250px);
   }
   header {
-    padding: 0 21px;
+    width: 100%;
     min-height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2113;
+    color: #fff;
+    background: #b45dea;
+    line-height: 50px;
+    text-align: center;
+    box-shadow: 0 1px 0 rgba(0,0,0,.1), 0 1px 2px rgba(0,0,0,.1);
+    transition: all .3s ease;
     .title {
       width: auto;
       min-height: 50px;
@@ -80,11 +81,13 @@ export default {
     }
     .menu-btn {
       float: left;
+      margin-left: 21px;
       z-index: 213;
       cursor: pointer;
     }
     .search-btn {
       float: right;
+      margin-right: 21px;
       z-index: 213;
       cursor: pointer;
     }
