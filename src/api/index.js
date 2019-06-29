@@ -10,14 +10,10 @@ import Axios from 'axios'
  * @export
  * @param {page} param0 
  */
-export function get({
-  page
-}){
+export function getMM(page){
   return Axios({
     method: 'get',
-    url: 'https://gank.io/api/web',
-    params: {
-      page
-    }
+    url: `https://gank.io/api/data/福利/10/${page}`,
   })
 }
+

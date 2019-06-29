@@ -1,1 +1,1 @@
-export const UPDATE_TITLE = ['web', 'meizi', 'fuli']
+export const NAME_TITLE = ['home', 'day', 'android', 'ios', 'web']
