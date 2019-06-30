@@ -17,3 +17,9 @@ export function getMM(page){
   })
 }
 
+export function getDetail(timeObj){
+  return Axios({
+    method: 'get',
+    url: `http://gank.io/api/history/content/day/${timeObj.Y}/${timeObj.M}/${timeObj.D}`
+  })
+}
