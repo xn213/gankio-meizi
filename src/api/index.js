@@ -23,3 +23,10 @@ export function getDetail(timeObj){
     url: `http://gank.io/api/history/content/day/${timeObj.Y}/${timeObj.M}/${timeObj.D}`
   })
 }
+
+export function getListData(type, page){
+return Axios({
+  method: 'get',
+  url: `http://gank.io/api/data/${type}/10/${page}`
+})
+}
