@@ -30,6 +30,9 @@ export default {
       showDetail: false
     }
   },
+  mounted(){
+    this.scroll=new BScroll(this.$refs.day, { mouseWheel: true, click: true, tap: true })
+  },
   methods: {
     show(){
       this.showDetail = true

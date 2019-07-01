@@ -6,13 +6,13 @@
 </template>
 
 <script>
-import vImg from 'components/lazyimg'
+// import vImg from 'components/lazyimg'
 export default {
   name: 'v-day',
   props: {
     data: Object
   },
-  components: { vImg },
+  // components: { vImg },
   created(){
     this.clearStyle()
   },
@@ -46,9 +46,6 @@ export default {
     margin:3px 0 13px;
   }
   &-content {
-    // img {
-    //   width: 70vw;
-    // }
     p {
       img {
         width: 100%;
