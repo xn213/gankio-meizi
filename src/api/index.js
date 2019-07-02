@@ -39,3 +39,13 @@ export function getListData(type, page){
     url: `http://gank.io/api/data/${type}/10/${page}`
   })
 }
+
+/**
+ * 获取每日推荐数据, .../前天/昨天/今天
+ */
+export function getSwiperData(){
+  return Axios({
+    method: 'get',
+    url: 'http://gank.io/api/history/content/5/1'
+  })
+}

@@ -17,7 +17,7 @@
 <script>
 import { formatDate } from 'utils'
 import BScroll from 'better-scroll'
-import vDay from './v-day'
+import vDay from 'components/v-day'
 export default {
   name: 'v-detail',
   props: {

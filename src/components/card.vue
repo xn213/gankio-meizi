@@ -34,11 +34,12 @@ export default {
     padding-bottom: 100%;
   }
   &-content {
-    width: 90%;
+    width: 100%;
     height: auto;
+    padding: 10px 5%;
     box-sizing: border-box;
     color: #fff;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: #b45dea;
     position: absolute;
     left: 0;
     right: 0;
@@ -47,7 +48,6 @@ export default {
       width: 100%;
       height: auto;
       text-align: left;
-      position: relative;
       font-size: 16px;
       line-height: 16px;
       word-wrap: break-word;

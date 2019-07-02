@@ -1,14 +1,17 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
-import * as ct  from 'const'
+// import * as ct  from 'const'
+import { NAME_TITLE }  from 'const'
+
 
 Vue.use(Vuex)
 
 // 创建一个对象来保存应用启动时的初始状态
 const state = {
   'headerTitle': '福利',
-  'menus': ct.NAME_TITLE,
+  // 'menus': ct.NAME_TITLE,
+  'menus': NAME_TITLE,
   'isMenuShow': false,
   'isLoadingShow': false,
   'news': 5

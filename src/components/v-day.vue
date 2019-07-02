@@ -1,5 +1,5 @@
 <template>
-  <div class="day" rel='dom'>
+  <div class="day bounceInRight" rel='dom'>
     <h1>{{ data.title }}</h1>
     <div class="day-content" v-html="data.content"></div>
   </div>
@@ -30,6 +30,7 @@ export default {
 </script>
 
 <style lang="scss">
+// 由于返回内容过多, 过滤一些内容
 .day ul img,
 .day h2,
 .day p:nth-last-child(2),
